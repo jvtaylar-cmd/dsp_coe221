@@ -22,7 +22,7 @@ signal_sampled = np.sin(2 * np.pi * f_signal * t_sampled)
 # Plotting
 fig, ax = plt.subplots(figsize=(10, 4))
 ax.plot(t_continuous, signal_continuous, label="Continuous Signal", color='blue')
-ax.stem(t_sampled, signal_sampled, linefmt='r-', markerfmt='ro', basefmt='gray', label="Sampled Signal", use_line_collection=False)
+ax.stem(t_sampled, signal_sampled, linefmt='r-', markerfmt='ro', basefmt='gray', label="Sampled Signal")
 ax.set_xlabel("Time (s)")
 ax.set_ylabel("Amplitude")
 ax.set_title("Signal vs Sampled Signal")
